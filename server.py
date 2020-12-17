@@ -71,7 +71,8 @@ def summary():
     while 'output' not in req:
         time.sleep(CHECK_INTERVAL)
 
-    return req['output']
+    result = req['output'][7:-4]
+    return result
 
 
 # Health Check
